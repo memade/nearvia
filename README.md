@@ -1,34 +1,57 @@
 # 咫间 · Nearvia
 
-文件与消息，直接到你。  
+文件与消息，直接到你。 / 檔案與訊息，直接到你。  
 Files & messages. Straight to you.
 
-[官网 / Website](https://skstu.com) · [预览版 / Previews](https://github.com/memade/nearvia/releases)
+[官网 / 官網 / Website](https://skstu.com) · [RC1](https://github.com/memade/nearvia/releases/tag/v0.1.0-rc.1) · [安装 / 安裝 / Installation](INSTALL.md) · [发行说明 / 發行說明 / Release notes](releases/v0.1.0-rc.1.md) · [Issues](https://github.com/memade/nearvia/issues)
 
-本仓库用于客户端安装包、发行说明和许可文件，不包含完整客户端或 SovKit SDK 源码。
-独立 STUN 组件在 [sovkit-stun](https://github.com/memade/sovkit-stun) 开源，范围和许可与客户端分开。
-GitHub 自动生成的 Source code 压缩包只包含本发行仓库文档，不是客户端源码或安装包。
+## 简体中文
 
-## 预览范围
+Nearvia 提供免费的近场通信：局域网消息与文件传输，蓝牙短文字和送达回执。双方核对安全码后建立信任。蓝牙不传文件；RC1 不包含跨网、中继、网络分享与发送文件夹。
 
-- Android arm64 APK：长期发布密钥签名。旧 Debug 签名研发包可能存在签名冲突；不要直接清除旧数据。
-- macOS Apple Silicon：ad-hoc 签名、未公证，非 Intel 包，首次启动可能被系统拦截。
-- 暂无 iOS、Windows、Linux 客户端安装包。本仓库不把 STUN 或节点组件当作客户端交付。
+当前候选版 **0.1.0-rc.1 / build 10**：
 
-仅下载 GitHub Release 中明确标出的安装包，并核对 SHA-256；预览版不是稳定版。
-具体版本、最低系统、已测范围和已知限制，以对应发行说明为准。
-首次使用须设置独立数据密码。数据库加密不包含已接收文件，不要仅用预览软件保存重要资料。
+- Android arm64，Android 7.0（API 24）及以上：长期发行密钥签名 APK。
+- macOS Apple Silicon，macOS 13 及以上：Developer ID 签名、Apple 公证并附加票据的 ZIP。
+- iOS 15 及以上：登记设备后通过 Ad Hoc 定向提供，公开 Release 不提供 IPA。请[联系开发者](mailto:k34ubll5@gmail.com?subject=Nearvia%20iOS%20Ad%20Hoc)，不要公开提交设备标识。
+- Windows、Linux、Intel Mac 本轮没有安装包。
+
+这是候选版。最终三端升级和消息/文件冒烟已通过，完整测试矩阵仍有待测项；详见发行说明。下载后核对 `SHA256SUMS`，升级前不要先卸载或清除数据。首次进入无需个人密码，可在设置中启用；接收文件本体不属于数据库加密范围，重要资料保留原件。
+
+本仓库只分发客户端安装包、说明和许可文件，不包含完整客户端或 SovKit SDK 源码。GitHub 自动生成的 Source code ZIP/TAR 仅是本仓库文档，不能安装。开源 [sovkit-devtools](https://github.com/memade/sovkit-devtools) 工作台与 [sovkit-stun](https://github.com/memade/sovkit-stun) 组件各有独立许可与范围。
+
+## 繁體中文
+
+Nearvia 提供免費近場通訊：區域網路訊息與檔案傳輸，藍牙短文字與送達回覆。雙方核對安全碼後建立信任。藍牙不傳檔案；RC1 不包含跨網路、中繼、網路分享與傳送資料夾。
+
+目前候選版 **0.1.0-rc.1 / build 10**：
+
+- Android arm64，Android 7.0（API 24）以上：長期發行金鑰簽章 APK。
+- macOS Apple Silicon，macOS 13 以上：Developer ID 簽章、Apple 公證並附加票據的 ZIP。
+- iOS 15 以上：登記裝置後透過 Ad Hoc 定向提供，公開 Release 不提供 IPA。請[聯絡開發者](mailto:k34ubll5@gmail.com?subject=Nearvia%20iOS%20Ad%20Hoc)，勿公開提交裝置識別碼。
+- 本次沒有 Windows、Linux 或 Intel Mac 安裝包。
+
+這是候選版。最終三端升級與訊息/檔案冒煙測試已通過，完整測試矩陣仍有待測項，詳見發行說明。下載後核驗 `SHA256SUMS`，升級前請勿先解除安裝或清除資料。首次進入不需個人密碼，可在設定啟用；接收檔案本體不在資料庫加密範圍內，重要資料請保留原件。
+
+此儲存庫僅分發安裝包、文件及授權，不包含完整客戶端或 SovKit SDK 原始碼。GitHub 自動產生的 Source code ZIP/TAR 只含儲存庫文件，並非安裝包。[sovkit-devtools](https://github.com/memade/sovkit-devtools) 與 [sovkit-stun](https://github.com/memade/sovkit-stun) 各有獨立授權及範圍。
 
 ## English
 
-This repository hosts client installers, release notes and notices, not the full client or SovKit SDK source.
-The separate [STUN component](https://github.com/memade/sovkit-stun) has its own source and license.
-GitHub's automatic source archives contain this distribution repository's documentation, not client sources.
+Nearvia offers free nearby communication: local-network files and messages, plus Bluetooth short text and delivery receipts. Both devices check and confirm a security code. Bluetooth does not carry files. RC1 excludes internet-wide connectivity, relay, network sharing and folder sending.
 
-Preview targets are Android arm64 (persistent release-key APK) and Apple Silicon macOS
-(ad-hoc signed, **not notarized**, not Intel). There are no iOS, Windows or Linux client installers here.
-Use the exact release notes for requirements and tested scope. Verify checksums before installing.
-Previews are not stable releases; keep independent copies of important files.
+Current candidate: **0.1.0-rc.1 / build 10**.
 
-The application ID remains `com.skstu.sovkit`. Original SovKit code is Apache-2.0; third-party
-components retain their own licenses. Keep the notices and covered-source overlays included in each package.
+- Android arm64, Android 7.0 (API 24)+: APK signed with the persistent release key.
+- Apple Silicon macOS, macOS 13+: Developer ID-signed, Apple-notarized and stapled ZIP.
+- iOS 15+: private Ad Hoc distribution after device registration. No public IPA attachment. [Contact the developer](mailto:k34ubll5@gmail.com?subject=Nearvia%20iOS%20Ad%20Hoc); never post device identifiers publicly.
+- No Windows, Linux or Intel Mac installers in this release.
+
+This is a release candidate. Final three-device upgrade and communication smoke checks passed; the full test matrix still has untested cases. Read the release notes and verify `SHA256SUMS`. Do not uninstall or clear data before upgrading. First launch needs no personal password; one can be enabled in Settings. Received files are outside database encryption; retain important originals.
+
+This repository distributes installers, documentation and notices, not full client or SDK source. GitHub's automatic source archives contain repository documents, not installers. [sovkit-devtools](https://github.com/memade/sovkit-devtools) and [sovkit-stun](https://github.com/memade/sovkit-stun) have separate licenses and scopes.
+
+## License / 许可 / 授權
+
+Original SovKit code is Apache-2.0. Third-party components retain their own licenses. Preserve [LICENSE](LICENSE), [NOTICE.md](NOTICE.md) and the notices and covered-source overlays included in application bundles. Names and logos are not licensed as trademarks by the code license.
+
+Apple application ID: `com.skstu.nearvia`. Android application ID: `com.skstu.sovkit`. Older releases retain their original scope and identifiers; current notes do not change historical packages.
