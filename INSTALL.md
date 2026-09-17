@@ -1,5 +1,9 @@
 # Nearvia 0.1.0-rc.1 · Installation / 安装 / 安裝
 
+**2026-09-17：Windows ZIP 与 macOS DMG 请使用 [桌面安装补充](INSTALL-DESKTOP.md)。Windows ZIP 與 macOS DMG 請使用 [桌面安裝補充](INSTALL-DESKTOP.md)。For current Windows ZIP and macOS DMG packages, see the [desktop installation addendum](INSTALL-DESKTOP.md).**
+
+以下为 2026-09-16 原始安装记录。以下為 2026-09-16 原始安裝記錄。The original 16 Sep instructions follow.
+
 Release candidate, version 0.1.0, build 10. Supported public packages: Android arm64 (API 24+) and macOS Apple Silicon (macOS 13+). iOS 15+ uses private, registered-device Ad Hoc distribution.
 
 ## 简体中文
