@@ -1,6 +1,6 @@
-# 咫间 · Nearvia
+# 直予 · Zhiyu
 
-文件与消息，直接到你。 / 檔案與訊息，直接到你。  
+消息与数据，直接到你。 / 檔案與訊息，直接到你。  
 Files & messages. Straight to you.
 
 [官网 / 官網 / Website](https://skstu.com) · [RC1](https://github.com/memade/nearvia/releases/tag/v0.1.0-rc.1) · [安装 / 安裝 / Installation](INSTALL.md) · [桌面补充 / Desktop additions](INSTALL-DESKTOP.md) · [发行说明 / 發行說明 / Release notes](releases/v0.1.0-rc.1.md) · [Issues](https://github.com/memade/nearvia/issues)
