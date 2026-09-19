@@ -5,7 +5,7 @@ Messaging and file transfer between devices. Formerly Nearvia.
 
 [官网 / Website](https://skstu.com/products/zhiyu/) · [RC2](https://github.com/memade/nearvia/releases/tag/v0.1.0-rc.2) · [安装 / Installation](INSTALL.md) · [发行说明 / Release notes](releases/v0.1.0-rc.2.md)
 
-当前候选版 **0.1.0-rc.2 / build 12**，支持简体中文、繁体中文和英文。
+当前候选版 **0.1.0-rc.2 / build 13**，支持简体中文、繁体中文和英文。
 目前候選版支援簡體中文、繁體中文與英文。
 The current release candidate supports Simplified Chinese, Traditional Chinese and English.
 

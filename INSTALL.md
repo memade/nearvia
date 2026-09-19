@@ -1,6 +1,6 @@
 # 直予 / Zhiyu RC2 安装
 
-版本：0.1.0-rc.2（build 12）。下载 Release 附件并核对 `SHA256SUMS`。这是候选版。
+版本：0.1.0-rc.2（build 13）。下载 Release 附件并核对 `SHA256SUMS`。这是候选版。
 
 - **Android arm64 / Android 7.0+**：安装 APK，允许当前下载器或文件管理器安装应用。已有版本直接覆盖；遇到签名冲突请停止并反馈，不要先卸载。
 - **macOS Apple Silicon / macOS 13+**：退出旧版，打开 DMG，将 `Zhiyu.app` 拖入 Applications，弹出映像后启动。应用与 DMG 均已 Developer ID 签名、公证并附加票据。旧版名为 `Nearvia.app` 时，替换旧应用并保留应用数据，不要同时运行两份。
@@ -20,7 +20,7 @@
 
 ## English
 
-Version 0.1.0-rc.2, build 12. Verify `SHA256SUMS`. Quit the previous version and preserve app data before upgrading.
+Version 0.1.0-rc.2, build 13. Verify `SHA256SUMS`. Quit the previous version and preserve app data before upgrading.
 
 - **Android arm64 / Android 7.0+**: install the APK over the existing app. If signatures conflict, stop and report it; do not uninstall first.
 - **Apple Silicon / macOS 13+**: open the DMG, copy `Zhiyu.app` into Applications, eject the image, then launch the installed copy. Both the app and DMG are Developer ID signed, notarized and stapled. Replace an older `Nearvia.app` while retaining its data; do not run both copies.
